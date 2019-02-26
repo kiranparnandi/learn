@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.aem.velcro.core.schedulers.ShedularJob">
+    <OCD id="com.aem.velcro.core.schedulers.ShedularJob" name="%com.aem.velcro.core.schedulers.ShedularJob.name" description="%com.aem.velcro.core.schedulers.ShedularJob.description">
+        <AD id="scheduler.expression" type="String" default="0\ 0/1\ *\ 1/1\ *\ ?\ *" name="%com.aem.velcro.core.schedulers.ShedularJob.scheduler.expression.name" description="%com.aem.velcro.core.schedulers.ShedularJob.scheduler.expression.description"/>
+    </OCD>
+    <Designate pid="com.aem.velcro.core.schedulers.ShedularJob">
+        <Object ocdref="com.aem.velcro.core.schedulers.ShedularJob"/>
+    </Designate>
+</metatype:MetaData>

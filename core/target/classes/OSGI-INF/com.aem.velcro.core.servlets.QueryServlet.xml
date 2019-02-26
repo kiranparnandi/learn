@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.aem.velcro.core.servlets.QueryServlet">
+        <implementation class="com.aem.velcro.core.servlets.QueryServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/query
+        </property>
+        <property name="sling.servlet.methods">
+            Get
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.velcro.core.servlets.QueryServlet"/>
+        <reference name="service" interface="com.aem.velcro.core.QueryService" cardinality="1..1" policy="static" bind="bindService" unbind="unbindService"/>
+    </scr:component>
+</components>

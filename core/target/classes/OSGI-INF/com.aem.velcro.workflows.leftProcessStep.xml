@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.aem.velcro.workflows.leftProcessStep">
+        <implementation class="com.aem.velcro.workflows.leftProcessStep"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.aem.velcro.workflows.leftProcessStep"/>
+        <reference name="obj" interface="com.aem.velcro.core.OsgiServiceInterface" cardinality="1..1" policy="static" bind="bindObj" unbind="unbindObj"/>
+    </scr:component>
+</components>
